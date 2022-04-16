@@ -9,7 +9,7 @@ public class Task3 {
         books.put(4, new Book("Title3","AuthorName","Publisher3",2010, 150));
 
         int userChoice = 0;
-        while (userChoice != 4) {
+        while (userChoice != 3) {
             userChoice = menu();
             switch (userChoice) {
                 case 1:
@@ -206,7 +206,7 @@ public class Task3 {
         }
 
         public boolean is_unique(HashMap<Integer, Book> bookHashMap){
-            TreeSet<Book> bookTreeSet = new TreeSet<Book>(bookHashMap.values());
+            TreeSet<Book> bookTreeSet = new TreeSet<>(bookHashMap.values());
             return bookHashMap.values().size() == bookTreeSet.size();
         }
 

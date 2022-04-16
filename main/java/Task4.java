@@ -35,8 +35,14 @@ public class Task4 {
     static void add_byte(ArrayList<Byte> list){
         Scanner sc = new Scanner(System.in);
         System.out.println("Input value to add to bytelist");
-        byte value = sc.nextByte();
-        list.add(value);
+        try {
+            byte value = sc.nextByte();
+            list.add(value);
+            System.out.println("Value " + value + " Successfully added to list");
+        } catch (InputMismatchException e){
+            System.out.println("Value out of range");
+        }
+
     }
 
     static void edit_byte(ArrayList<Byte> list){
@@ -47,9 +53,10 @@ public class Task4 {
         if (i >= 0 && i <list.size()){
             System.out.println("Input value to replace " + i + " element");
             byte newbyte = sc.nextByte();
+            byte oldval = list.get(i);
             list.remove(i);
             list.add(i, newbyte);
-            System.out.println("Byte " + newbyte + " successfully added to list");
+            System.out.println("Byte " + oldval + " successfully edited and now has value of " + newbyte);
             System.out.println("List now looks like " + list);
         }
         else System.out.println("Index is incorrect!");

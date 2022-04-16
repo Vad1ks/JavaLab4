@@ -3,10 +3,10 @@ import java.util.*;
 public class Task2{
     public static void main(String[] args) {
         HashMap<Integer, Task1.Abonent> abonents  = new HashMap<>();
-        abonents.put(2, new Task1.Abonent("sur3","sur2","pat3","addr3"));
-        abonents.put(1, new Task1.Abonent("sur1","sur3","pat1","addr1"));
-        abonents.put(3, new Task1.Abonent("sur2","sur1","pat2","addr2"));
-        abonents.put(4, new Task1.Abonent("1","2","3","4"));
+        abonents.put(2, new Task1.Abonent("Ivanov","Ivan","Ivanych","Ivan's address"));
+        abonents.put(1, new Task1.Abonent("Petrov","Petro","Petrovych","Petro's address"));
+        abonents.put(3, new Task1.Abonent("Sosnovenko","Vadym","Volodymyrovych","Vadym's address"));
+        abonents.put(4, new Task1.Abonent("Sample Surname","Sample Name","Sample patronymic","Address"));
 
         int userChoice = 0;
         while (userChoice != 4) {

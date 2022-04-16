@@ -3,10 +3,10 @@ import java.util.*;
 public class Task1 {
     public static void main(String[] args) {
         TreeMap<Integer, Abonent> abonents  = new TreeMap<>();
-        abonents.put(2, new Abonent("sur3","name2","pat3","addr3"));
-        abonents.put(1, new Abonent("sur1","name3","pat1","addr1"));
-        abonents.put(3, new Abonent("sur2","name1","pat2","addr2"));
-        abonents.put(4, new Abonent("1","2","3","4"));
+        abonents.put(2, new Abonent("Petrov","Ivan","Ivanych","Ivan's address"));
+        abonents.put(1, new Abonent("Ivanov","Petro","Petrovych","Petro's address"));
+        abonents.put(3, new Abonent("Sosnovenko","Vadym","Volodymyrovych","Vadym's address"));
+        abonents.put(4, new Abonent("Sample Surname","Sample Name","Sample patronymic","Address"));
         int userChoice = 0;
         while (userChoice != 3) {
             userChoice = menu();
